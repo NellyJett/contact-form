@@ -39,9 +39,9 @@ const Registration = () => {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent default form submission behavior
+        e.preventDefault(); 
         if (validateForm()) {
-            setIsSubmitted(true); // Set form as submitted to show the success message
+            setIsSubmitted(true); 
 
             // Reset form after submission
             setFormValues({
@@ -56,7 +56,7 @@ const Registration = () => {
             setFormErrors({});
 
             // Optionally, hide the success message after a few seconds
-            setTimeout(() => setIsSubmitted(false), 3000); // Hide message after 3 seconds
+            setTimeout(() => setIsSubmitted(false), 3000); 
         }
     };
 
